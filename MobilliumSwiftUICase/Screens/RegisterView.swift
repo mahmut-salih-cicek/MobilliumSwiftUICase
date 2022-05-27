@@ -109,16 +109,19 @@ struct RegisterView: View {
                     // passwordlar eslesmiyor
                     isLoginViewActive = false
                     alertText = "not match password"
+                    isAlert = true
                 }
             }else{
                 isLoginViewActive = false
                 // count 3 den az
                 alertText = "less than 3 characters"
+                isAlert = true
             }
         }else{
             // text fieldlarda bos birakilma var
             isLoginViewActive = false
             alertText = "empty text"
+            isAlert = true
         }
     }
     
